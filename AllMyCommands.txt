@@ -1,26 +1,36 @@
-cd C:\Users\Mohammad\Desktop\Sprint 0 IT
-git init
-git remote add origin https://github.com/ahmedhatem777/Sprint-0-IT.git
-git remote
+cd C:\Users\Mohammad\Desktop\Sprint 0 IT                //changing the directory 
+git init                                           //initalizing an empty repo          
+git remote add origin https://github.com/ahmedhatem777/Sprint-0-IT.git   //adding the remote repo created on github
+git remote     // checking the remote repo
 git remote -v
-git status
-git add -A
-git status
-git commit -m "adding the three files"
-git rm "Second File.txt"
-git status
-git commit -m "Deleted the second file"
-git reset --hard 8266f3e
-git push --set-upstream origin master
+git status     // checking working directory status after adding the three files
+git add -A     // adding the three files to the staging area
+git status     // checking staging area
+git commit -m "adding the three files"    // first commit
+git rm "Second File.txt"          // deleting the second file from working directory and staging area
+git status                        // checking status after deletion
+git commit -m "Deleted the second file"   // second commit
+git reset --hard 8266f3e          //rolling back to the first commit before deleting the second file 
+git push --set-upstream origin master    //pushing into the remote repo
+git branch            
+git branch ReadMe    // creating branch ReadMe
+git checkout ReadMe  // switching from master to the branch ReadMe
+git status  // checking status after adding README.TXT file
+git add -A  // adding the file to staging area
+git commit -m "Added the file README.MD"   // third commit
 git branch
-git branch ReadMe
-git checkout ReadMe
-git status 
-git add -A
-git commit -m "Added the file README.MD"
-git branch
-git push origin ReadMe
-git checkout master
-git pull origin
-git merge ReadMe
-git push
+git push origin ReadMe //pushing into ReadMe
+git checkout master    //switching to master branch
+git pull origin        
+git merge ReadMe       // merging ReadMe and master
+git push               // pushing after the merge
+git status  // checking after adding AllMyCommands.txt file
+git add -A   // adding to staging area
+git commit -m "Adding AllMyCommands.txt file"  // fourth commit into local repo
+git status // checking after editing AllMyCommands file and README file
+git add -a 
+git commit -m "editing AllMyCommands.txt and README.MD"  //last commit
+git push origin master
+
+
+
