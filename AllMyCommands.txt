@@ -1,0 +1,26 @@
+cd C:\Users\Mohammad\Desktop\Sprint 0 IT
+git init
+git remote add origin https://github.com/ahmedhatem777/Sprint-0-IT.git
+git remote
+git remote -v
+git status
+git add -A
+git status
+git commit -m "adding the three files"
+git rm "Second File.txt"
+git status
+git commit -m "Deleted the second file"
+git reset --hard 8266f3e
+git push --set-upstream origin master
+git branch
+git branch ReadMe
+git checkout ReadMe
+git status 
+git add -A
+git commit -m "Added the file README.MD"
+git branch
+git push origin ReadMe
+git checkout master
+git pull origin
+git merge ReadMe
+git push
